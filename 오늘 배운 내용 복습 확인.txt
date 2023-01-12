@@ -1,0 +1,6 @@
+spring sts-IED 설치 하고 셋팅
+로컬 c에 sts-release 갔다놓고 devtools에 설치
+c에 SPRING_STUDY 폴더 생성 -> WORKSPACE
+1. MAVEN, POM, XML 확인
+2. DI (의존성) , IOC (제어의 역전)  확인 , 프레임워크
+3. SPRINGMVC LOMBOK 설치및 구동잘되는지 확인
