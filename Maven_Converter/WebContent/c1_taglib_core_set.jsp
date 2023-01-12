@@ -13,6 +13,7 @@
 <%-- <c:set> 태그 기본 사용 방법 --%>
 <c:set var="name1" value="장나라" />
 ${name1}
+<%-- ${var} EL표현법 --%>
 <br> <hr>
 <c:set var="name2">김희선</c:set>
 ${name2}

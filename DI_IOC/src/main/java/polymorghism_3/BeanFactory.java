@@ -1,6 +1,5 @@
 package polymorghism_3;
 
-
 // 유지보수를 용이하게 하기 위해 결합도(COUPLING)를 낮추기 위한 방법으로
 // 이번에는 디자인 패턴(Factory 패턴)을 사용해 봅니다.
 // 앞서, 다형성을 이용했던 방법은 메서드를 호출할때 인터페이스를 이용함으로써 좀더 쉽게 TV를 교체할수 있었지만
@@ -10,10 +9,10 @@ package polymorghism_3;
 // TV User와 TV 사이를 느슨한 결합 상태로 만들어 주어, 유지보수를 용이하게 하려고 합니다.
 
 public class BeanFactory {
-	public Object getBean(String beanName) {
-		if(beanName.equals("samsung")) {
+	public Object getBean(String choice) {
+		if(choice.equals("samsung")) {
 			return new SamsungTV();
-		} else if (beanName.equals("lg")) {
+		} else if (choice.equals("lg")) {
 			return new LgTV();
 			
 		}

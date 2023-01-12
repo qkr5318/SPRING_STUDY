@@ -9,6 +9,7 @@ public class TVUser {
 
 	public static void main(String[] args) {
 	
+		
 		// 1. Spring 컨테이너를 구동합니다.
 		AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
 		

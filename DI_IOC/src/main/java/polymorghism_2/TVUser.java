@@ -8,7 +8,7 @@ public class TVUser {
 	//다형성을 이용하여,ㅡ 비교적 손쉽게 SamsungTv를 LgTV로 교체할 수 있었따.
 
 	public static void main(String[] args) {
-		TV jangnaratv = new LgTV();
+		TV jangnaratv = new SamsungTV();
 		jangnaratv.PowerOn();
 		jangnaratv.volumUp();
 		jangnaratv.volumDown();
