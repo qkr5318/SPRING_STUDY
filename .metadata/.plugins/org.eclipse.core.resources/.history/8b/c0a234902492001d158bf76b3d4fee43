@@ -1,0 +1,19 @@
+package polymorghism;
+
+public class SamsungTV   {
+
+	
+	public void PowerOn() {
+		System.out.println("SamsungTV--전원 켠다");
+	}
+	public void PowerOff() {
+		System.out.println("SamsungTV--전원 끈다");
+	}
+	public void volumUp() {
+		System.out.println("SamsungTV--소리 올린다");
+	}
+	public void volumDown() {
+		System.out.println("SamsungTV--소리 내린다.");
+	}
+
+}

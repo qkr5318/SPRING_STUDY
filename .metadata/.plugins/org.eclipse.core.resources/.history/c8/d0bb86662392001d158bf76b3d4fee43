@@ -1,0 +1,16 @@
+package polymorghism;
+
+public class TVUser {
+
+	public static void main(String[] args) {
+
+		SamsungTV jangnaratv = new SamsungTV();
+		jangnaratv.PowerOn();
+		jangnaratv.volumUp();
+		jangnaratv.volumDown();
+		jangnaratv.PowerOff();
+		
+		
+	}
+
+}

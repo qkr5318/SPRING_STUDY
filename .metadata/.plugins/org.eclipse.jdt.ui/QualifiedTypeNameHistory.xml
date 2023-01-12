@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="polymorghism.SamsungTV"/>
+<fullyQualifiedTypeName name="polymorghism.LgTV"/>
+<fullyQualifiedTypeName name="polymorghism_2.SamsungTV"/>
+<fullyQualifiedTypeName name="polymorghism_2.LgTV"/>
+<fullyQualifiedTypeName name="polymorghism3.SamsungTV"/>
+<fullyQualifiedTypeName name="polymorghism3.LgTV"/>
+<fullyQualifiedTypeName name="polymorghism3.BeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="polymolghism_4.SamsungTV"/>
+<fullyQualifiedTypeName name="polymolghism_4.TV"/>
+<fullyQualifiedTypeName name="polymorghism_4.LgTV"/>
+<fullyQualifiedTypeName name="polymorghism_7.SonySpeaker"/>
+<fullyQualifiedTypeName name="polymorghism_8.SonySpeaker"/>
+<fullyQualifiedTypeName name="polymorghism_6.TV"/>
+<fullyQualifiedTypeName name="polymorghism_10.Speaker"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+<fullyQualifiedTypeName name="com.lombok.service.HomeService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="lombok.Getter"/>
+<fullyQualifiedTypeName name="lombok.Setter"/>
+<fullyQualifiedTypeName name="com.lombok.vo.LombokVo1"/>
+<fullyQualifiedTypeName name="test.lombok.vo.LombokVo2"/>
+<fullyQualifiedTypeName name="lombok.Builder"/>
+<fullyQualifiedTypeName name="test.lombok.vo.LombokVo3"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+package test.lombok.service;
+
+import org.springframework.stereotype.Service;
+
+import test.lombok.vo.LombokVo1;
+import test.lombok.vo.LombokVo2;
+
+@Service
+public class HomeService {
+	public void backHome() {
+		System.out.println("쿼카 힘내~");
+		
+		LombokVo1 vo1 = new LombokVo1();
+		vo1.setName("쿼카");
+		vo1.setAge(29);
+		System.out.println(vo1.getName() + "님의 나이는 한살줄여서" + vo1.getAge() + "입니다!");
+		
+		LombokVo2 vo2 = new LombokVo2("김희선", "30"
+				System.out.println(vo1.getName() + "님의 나이는 한살줄여서" + vo1.getAge() + "입니다!"));
+	}
+}

@@ -1,0 +1,30 @@
+package polymorghism_9;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+
+public class TVUser {
+
+	public static void main(String[] args) {
+	
+		// 1. Spring 컨테이너를 구동합니다.
+		AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
+		
+		
+		// 2. Spring 컨테이너로 부터 필요한 객체를 요청(Look Up)합니다.
+		// 즉, 이제 스프링 컨테이너를 구동하고 이름이 tv인 객체를 getBean() 메서드를 이용하여 요청하도록
+		// TVUser를 수정합니다.
+		TV tv = (TV)factory.getBean("tv");
+		tv.PowerOn();
+		tv.volumUp();
+		tv.volumDown();
+		tv.PowerOff();
+		
+		// 3. Spring 컨테이너를 종료합니다.
+		factory.close();
+	
+	}
+
+}

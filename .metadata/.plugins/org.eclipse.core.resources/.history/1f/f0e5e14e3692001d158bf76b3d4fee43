@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- 앞서 TV 예제를 스프링 기반으로 테스트하기 위해 SamsungTV 클래스를 
+	스프링 설정 파일 applicationContet.xml 파일에 등록합니다.
+	이때, <bean> 엘리먼트를 사용하는데, 클래스 하나당 하나의 <bean> 설정이 
+		필용합니다. -->
+	<!-- 
+	 	<bean id="tv" class="polymorghism_4.LgTV"></bean>
+	 -->
+		
+		
+		
+		
+</beans>

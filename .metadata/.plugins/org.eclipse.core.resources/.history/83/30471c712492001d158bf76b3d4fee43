@@ -1,0 +1,15 @@
+package polymorghism;
+
+
+// interface는 기능 명세성 이기능을 따라야 한다는 뜻
+public interface TV {
+
+	void PowerOn();
+
+	void PowerOff();
+
+	void volumUp();
+
+	void volumDown();
+
+}
