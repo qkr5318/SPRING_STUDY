@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="Spring_CRUD_Review"/>
+<aop-project name="Spring_CRUD"/>
 <aop-project name="DI_IOC"/>
-<aop-project name="LombokTest"/>
+<aop-project name="SPRING_MULTIPART"/>
+<aop-project name="Spring_OracleDB_IAMPORT"/>
 <aop-project name="Maven_Making"/>
+<aop-project name="LombokTest"/>
+<aop-project name="Mybatis_Settings"/>
+<aop-project name="SPRING_THUMBNAIL"/>
 </aop-reference-model>
