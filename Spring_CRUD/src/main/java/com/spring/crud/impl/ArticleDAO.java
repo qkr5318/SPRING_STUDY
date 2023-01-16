@@ -16,24 +16,29 @@ public class ArticleDAO {
    // 의존주입
    @Autowired
    public ArticleDAO(SqlSessionTemplate mybatis) {
+	   System.out.println("DAOArticleDAo실행");
       this.mybatis = mybatis;
    }
    
    public void insert(ArticleVO vo) {
+	   System.out.println("DAOinsert실행");
       mybatis.insert("ArticleDAO.insert",vo);
    }
    
    public ArticleVO selectById(ArticleVO vo) {
+	   System.out.println("DAOseletById실행");
       return (ArticleVO)mybatis.selectOne("ArticleDAO.selectById",vo);
    }
    
    // 최신글 업데이트
    public void update(ArticleVO vo) {
+	   System.out.println("DAOupdate실행");
       mybatis.update("ArticleDAO.update",vo);
    }
    
    // 최신글 삭제
    public void delete(ArticleVO vo) {
+	   System.out.println("DAOdelete실행");
       mybatis.delete("ArticleDAO.delete", vo);
    }
 }

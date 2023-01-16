@@ -5,8 +5,8 @@
 <aop-project name="DI_IOC"/>
 <aop-project name="SPRING_MULTIPART"/>
 <aop-project name="Spring_OracleDB_IAMPORT"/>
-<aop-project name="Maven_Making"/>
 <aop-project name="LombokTest"/>
 <aop-project name="Mybatis_Settings"/>
+<aop-project name="Maven_Making"/>
 <aop-project name="SPRING_THUMBNAIL"/>
 </aop-reference-model>

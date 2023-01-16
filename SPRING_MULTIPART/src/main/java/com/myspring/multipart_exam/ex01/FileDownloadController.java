@@ -22,6 +22,7 @@ public class FileDownloadController {
 	@RequestMapping("/download")
 	public void download(@RequestParam("imageFileName") String imageFileName,
 			                 HttpServletResponse response)throws Exception {
+		System.out.println("==>download실행");
 		OutputStream out = response.getOutputStream();
 		String downFile = CURR_IMAGE_REPO_PATH + "\\" + imageFileName;
 

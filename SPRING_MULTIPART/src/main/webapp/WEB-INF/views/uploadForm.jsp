@@ -27,9 +27,10 @@ function fn_addFile(){
 </head>
 <body>
 <h1>파일 업로드 하기</h1>
-<!-- enctype="multipart/form-data"의 의미는 파일 업로드 시
+<!-- enctype="multipart/form-data"의 의미는 파일 업로드 시 모든 문자를 인코딩 하지 않음을 명시 이 방식은 form요소가 파일이나 이미지를 서버로 전송할 때 주로 사용한다
      enctype은 반드시 multipart/form-data로 설정해야 합니다. -->
 <form method="post" action="${contextPath}/upload" enctype="multipart/form-data">
+	<!-- action form이 전송되는 서버 url 또는 html링크  enctypte 폼 데이터가 서버로 제출될 때 해당 데이터가 인코딩 되는 방법을 명시-->
 	<label>아이디:</label>
 	<!-- 텍스트 박스에 아이디(id)값을 입력 받아서 전송합니다. -->
     <input type="text" name="id"><br><br>

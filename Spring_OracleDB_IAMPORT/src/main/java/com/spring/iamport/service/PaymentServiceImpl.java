@@ -17,7 +17,7 @@ public class PaymentServiceImpl implements PaymentService{
 	
 	@Override
 	public void insertPaymentSuccess(PaymentVO vo) {
-		
+		System.out.println("==> insertPaymentSuccess실행");
 		dao.insertPaymentSuccess(vo);
 		
 		

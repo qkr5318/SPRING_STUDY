@@ -26,6 +26,7 @@ public class FileUploadController  {
 	private static final String CURR_IMAGE_REPO_PATH = "c:\\spring\\image_repo";
 	@RequestMapping(value="/form")
 	public String form() {
+		System.out.println("==>form실행");
 		// 업로드창인 uploadForm.jsp를 반환합니다.
 		return "uploadForm"; 
 	  }
@@ -33,6 +34,7 @@ public class FileUploadController  {
 	@RequestMapping(value="/upload",method = RequestMethod.POST)
 	public ModelAndView upload(MultipartHttpServletRequest multipartRequest,HttpServletResponse response)
 	  throws Exception{
+		System.out.println("==>upload실행");
 		multipartRequest.setCharacterEncoding("utf-8");
 		
 		// 매개변수 정보와 파일 정보를 저장할 Map을 생성합니다.
@@ -60,6 +62,7 @@ public class FileUploadController  {
 	}
 	
 	private List<String> fileProcess(MultipartHttpServletRequest multipartRequest) throws Exception{
+		System.out.println("==>fileProcess 실행");
 		List<String> fileList= new ArrayList<String>();
 		
 		// 첨부된 파일 이름을 가져옵니다.

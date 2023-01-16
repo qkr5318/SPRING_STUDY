@@ -32,8 +32,9 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
+		model.addAttribute("test", "민병재병신" );
 		
-		return "home";
+		return "uploadForm";
 	}
 	
 }

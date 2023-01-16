@@ -21,14 +21,17 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class FileUploadController  {
 	private static final String CURR_IMAGE_REPO_PATH = "c:\\spring\\image_repo2";
+	
 	@RequestMapping(value="/form")
 	public String form() {
+		System.out.println("==>form실행");
 	    return "uploadForm";
 	  }
 	
 	@RequestMapping(value="/upload",method = RequestMethod.POST)
 	public ModelAndView upload(MultipartHttpServletRequest multipartRequest,HttpServletResponse response)
 	  throws Exception{
+		System.out.println("==> upload실행");
 		multipartRequest.setCharacterEncoding("utf-8");
 		Map map = new HashMap();
 		Enumeration enu=multipartRequest.getParameterNames();
@@ -48,6 +51,7 @@ public class FileUploadController  {
 	}
 	
 	private List<String> fileProcess(MultipartHttpServletRequest multipartRequest) throws Exception{
+		System.out.println("==> fileProcess실행");
 		List<String> fileList= new ArrayList<String>();
 		Iterator<String> fileNames = multipartRequest.getFileNames();
 		while(fileNames.hasNext()){
@@ -58,6 +62,7 @@ public class FileUploadController  {
 			File file = new File(CURR_IMAGE_REPO_PATH +"\\"+ fileName);
 			if(mFile.getSize()!=0){ //File Null Check
 				if(! file.exists()){ //경로상에 파일이 존재하지 않을 경우
+					System.out.println("==>파일생성");
 					if(file.getParentFile().mkdirs()){ //경로에 해당하는 디렉토리들을 생성
 						file.createNewFile(); //이후 파일 생성
 					}

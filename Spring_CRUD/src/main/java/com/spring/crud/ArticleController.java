@@ -21,6 +21,7 @@ public class ArticleController {
 	// 해주는 것과 같은 역할을 하는 getArticle() 메서드 정의
 	@ModelAttribute("article")
 	public ArticleVO getArticle() {
+		System.out.println("CONgetArticle실행");
 		ArticleVO vo = new ArticleVO();
 		return articleService.selectById(vo);
 	}
@@ -28,12 +29,14 @@ public class ArticleController {
 	// 1. 게시글 등록
 	@RequestMapping("/article/write.do")
 	public String inset(HttpServletRequest request, HttpServletResponse response, ArticleVO vo) {
+		System.out.println("CONinset실행");
 		return process(request, response, vo, "insert");
 	}
 	
 	// 2. 최근 게시글 조회
 	@RequestMapping("/article/read.do")
 	public String selectById(ArticleVO vo) {
+		System.out.println("CONselectById실행");
 		return "/WEB-INF/views/readArticle.jsp";
 	}
 	
@@ -41,12 +44,14 @@ public class ArticleController {
 	
 	@RequestMapping("/article/modify.do")
 	public String update(HttpServletRequest request, HttpServletResponse response, ArticleVO vo) {
+		System.out.println("CONupdate실행");
 		return process(request, response, vo, "update");
 	}
 	
 	// 4. 최근게시글 삭제
 	@RequestMapping("/article/delete.do")
 	public String delete(HttpServletRequest request, HttpServletResponse response, ArticleVO vo) {
+		System.out.println("CONdelete실행");
 		return process(request, response, vo, "delete");
 	}
 	
@@ -55,6 +60,7 @@ public class ArticleController {
 	
 	// GET, POST, 그 밖의 요청에 대한 분기 처리를 해주는 process() 메서드 정의
 	private String process(HttpServletRequest request, HttpServletResponse response, ArticleVO vo, String query) {
+		System.out.println("CONprocess실행");
 		if (request.getMethod().equalsIgnoreCase("GET")) {
 			return viewResolverForm(query);
 		} else if(request.getMethod().equalsIgnoreCase("POST")) {
@@ -69,12 +75,14 @@ public class ArticleController {
 	
 	// 성공 화면 경로를 만들어 주는 viewResolverSuccess() 메서드를 정의함
 	private String viewResolverSuccess(String viewName) {
+		System.out.println("CONSuccess실행");
 		return "/WEB-INF/views/" + viewName + "Success.jsp";
 		
 	}
 	
 	// 입력한 쿼리문에 따라 메서드별 선택 실행하는 executeQuery() 메서드를  정의함
 	private void executeQuery(String query, ArticleVO vo) {
+		System.out.println("CONQuery실행");
 		if (query == "insert") {
 			articleService.insert(vo);
 		} else if(query == "update") {
